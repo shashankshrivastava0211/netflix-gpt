@@ -95,3 +95,24 @@ set up my tailwind
 
 # lets start by making first authentication 
 
+# lets set up routing now npm - react-router-dom
+createBrowserRouter([{
+    paths==>
+}])
+
+now import router provider
+router provider daal dia or individual hata diye 
+<RouterProvider router={appRrouter}>==>  const appRrouter=createBrowserRouter([{
+    paths
+}])
+
+background gradient to bottom makes ur header on absolute
+
+used opacity for makng my signup look upside of my background created logon now making sign up 
+# how can i change same for login for for sign up also how can i develop same login form to sign up page 
+
+for it we need to make for developing same form to be login sign up i have used state variable isSignupform
+how to do validation on form?
+alot of times when i build form in my web app we use library known as formic to handle forms
+
+
