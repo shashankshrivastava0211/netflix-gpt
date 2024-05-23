@@ -68,10 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+=================================================><=====================================================
 1)create react-app 
 2)rocesses let setup tailwind first
 set up my tailwind 
+3)Routing 
+login form
+form validation 
+useRef hook 
+firebase setup
+deploying our app to production 
+create signup -user account
+implemented sign in api 
+created redux store and user slice
+
+=================================================><=====================================================
 
 # feature 
 -browse page (logged in user)
@@ -81,6 +92,9 @@ set up my tailwind
 ---------title and description
         movie suggestion 
             movieList *n (vertically scroll)
+
+
+=================================================><=====================================================            
 
 # log out 
 #header
@@ -92,6 +106,9 @@ set up my tailwind
 -netflix-gpt 
         search bar 
         Movie suggestions
+
+
+=================================================><=====================================================
 
 # lets start by making first authentication 
 
@@ -114,5 +131,29 @@ used opacity for makng my signup look upside of my background created logon now 
 for it we need to make for developing same form to be login sign up i have used state variable isSignupform
 how to do validation on form?
 alot of times when i build form in my web app we use library known as formic to handle forms
+we will be useRef hook ==> 
 
 
+# use regex for valid Email and password regex keys from google refer utils
+
+=================================================><=====================================================
+
+ab hame email or password jo user enter krega login page pr vo chaiye toh ham uske liye ya toh state variable le skte hai or store kr skte hai hr on change k sath ya useRef le skte hain us login page ka refrence basically 
+created a useref
+const email =useRef(null) for eg=>
+now ref to email section ===><input classname"xyz" type="email" ref={email}>
+
+now when i am clicking submit button clicking on it is on submit methodnand refreshing the page after clicking in sign uop as it is a form and on clicking of thos button it is basically submitting it to prevent that <form onSubmit={(e)=>e.preventDefault}>
+
+on it gives u a refrence of this input bix as a object where email.current means input box and addinhg .value means value of it for eg password.current.value
+
+# authentication for authentication we need backend so we are using firebasew
+downloaded firebase and pasted config also make sre to use web and create a project 
+as we have same api get auth() for each and every api ib fiure vase si e-ursa vbetter ti stire ut ub a unique place where it can be used again nd agaibn so defined in firebase and exported it 
+=================================================><=====================================================
+
+now when sign up and sign is ready we have to implement take our user to browse page after login and sign up for that we will cresate a redux store and use it 
+
+used onAuthStateChane for connecting now if the user is sign up with that event listner which we have copied pasted from firebase manage users used useNavigate hook from react router dom to navigate it to browser
+navihation done successfully nhi hori thi kyuki body pr hi a[p routing hai toh nhi kr skta yaa tohj routing app level pr deni thi nhi di toh ab iske child se hi nevigate kra skte ho parent system smbhlta h isiliye login or signup pr individually krdia navigate ab 
+fixed bug==>state change bug store m display name show nhi hora th uske qki vo purana hi lera haio wps se dispatch kra action usse user update k baad taaki updated user jaaye idhr user nhi le sktey  qki user to woi waala jayega isiliye auth.current user 
