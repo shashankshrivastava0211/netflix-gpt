@@ -81,6 +81,12 @@ deploying our app to production
 create signup -user account
 implemented sign in api 
 created redux store and user slice
+implemented sign out 
+update profile
+bug fix
+unsubcribed to the onAuthchanged CALLBACK
+registered an tmdb api ,created an app an dget access tocken then take get data from tmdb niow play]ying apis 
+
 
 =================================================><=====================================================
 
@@ -157,3 +163,14 @@ now when sign up and sign is ready we have to implement take our user to browse 
 used onAuthStateChane for connecting now if the user is sign up with that event listner which we have copied pasted from firebase manage users used useNavigate hook from react router dom to navigate it to browser
 navihation done successfully nhi hori thi kyuki body pr hi a[p routing hai toh nhi kr skta yaa tohj routing app level pr deni thi nhi di toh ab iske child se hi nevigate kra skte ho parent system smbhlta h isiliye login or signup pr individually krdia navigate ab 
 fixed bug==>state change bug store m display name show nhi hora th uske qki vo purana hi lera haio wps se dispatch kra action usse user update k baad taaki updated user jaaye idhr user nhi le sktey  qki user to woi waala jayega isiliye auth.current user 
+
+# bug fixed for directly entering into browse without signing in through navbar for that i have used state change methods hamne login logout tbhi karaya jb user add hora hai or baaki jagah se naigate hata dia navigate tbhi hoga jb adduser ya remove user dispatch hoga ab ye ham body m nhi kr sktey qki body hi router hai iske child se kr skte the toh hamne heasder se krdia qki header sb jgah rehta h
+
+
+#TMDB login kra sign uo kra movie list api m gya ab api nikaali js krke shell pr aati h by default uske baad ab ye call krnapdega everytime i want that perticular api kuch contants chaiye is api k liye vo copy krke constants m daaldiye
+
+why api and everything happens two times in xonsole? even after empty dependency this basically happens becausde of strict mode in index.js if i remove strict mode it will show only 1 but even in strict modde this happens only in developing mot when code is pushed to production 
+it hsd=ioens because react renbders two times just to check if there are any incossistency with the app 
+
+
+
