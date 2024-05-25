@@ -174,3 +174,22 @@ it hsd=ioens because react renbders two times just to check if there are any inc
 
 
 
+implementerd early return as movies[0] wai error dega jo hsme food del m milra th qki movies[0] not exhisted qki initially movies[0] kuch nhi th voto null th fr api se aaya data or fr update hua tbtk movies[0] ko nhi pehachanega isko prevent krne k liyeb hamne early retun lgaya 
+if(movies===null) return;==>return yahi se  
+
+we do not have trailer from our current api so we need to get an trailer api also 
+  {
+      "iso_639_1": "en",
+      "iso_3166_1": "US",
+      "name": "Official Trailer 2",
+      "key": "qqrpMRDuPfc",
+      "site": "YouTube",
+      "size": 2160,
+      "type": "Trailer",
+      "official": true,
+      "published_at": "2024-02-14T17:00:47.000Z",
+      "id": "65ccf7e2e210230185c421e2"
+    },
+
+    hamne data nikaal lia trailer ka id pass krke vedio ki vedio ki id as prop pass kri hamne cintainer se fr voi id pass kri hamne fr api nikaal k hamnw uspr fil;ter lga dia data.filter((trailer)=>trailer==trailer) pr isse bhi hame multiple values mil gyi as there are multiple trailera for some websites toh  uske liye hamne first waala le lia 
+    hame ek key mili usey ham youtube pr bhjmnge
