@@ -193,3 +193,5 @@ we do not have trailer from our current api so we need to get an trailer api als
 
     hamne data nikaal lia trailer ka id pass krke vedio ki vedio ki id as prop pass kri hamne cintainer se fr voi id pass kri hamne fr api nikaal k hamnw uspr fil;ter lga dia data.filter((trailer)=>trailer==trailer) pr isse bhi hame multiple values mil gyi as there are multiple trailera for some websites toh  uske liye hamne first waala le lia 
     hame ek key mili usey ham youtube pr bhjmnge
+
+    # hamsha phle ek card bnao fr map kro direct nhu isiliye ohle store se data leke hamne pass kra list m list m jaake ek card bnaya phle 

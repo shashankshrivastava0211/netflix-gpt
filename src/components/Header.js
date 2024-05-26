@@ -25,7 +25,7 @@ const Header = () => {
             if (user) {
               
               const { uid,email,displayName,photoURL } = user;
-              console.log(user);
+              
               dispatch(addUser({uid:uid,email:email,displayName:displayName,photoURL:photoURL}))
               navigate("/browse")
               
