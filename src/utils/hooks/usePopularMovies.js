@@ -10,7 +10,7 @@ const usePopularMovies = () => {
         try {
             const response = await fetch('https://api.themoviedb.org/3/movie/popular', api_options);
             const json = await response.json();
-            console.log("popular",json.results);
+            
             dispatch(addPopularMovies(json.results));
         } catch (error) {
             console.error("Failed to fetch now playing movies:", error);

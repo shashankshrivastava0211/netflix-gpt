@@ -13,7 +13,7 @@ const useTopRated = () => {
                 throw new Error('Network response was not ok');
             }
             const json = await response.json();
-            console.log("toprated", json.results);
+           
             dispatch(addTopRatedMovies(json.results));
         } catch (error) {
             console.error('Failed to fetch top-rated movies:', error);

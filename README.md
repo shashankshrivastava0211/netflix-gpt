@@ -195,3 +195,8 @@ we do not have trailer from our current api so we need to get an trailer api als
     hame ek key mili usey ham youtube pr bhjmnge
 
     # hamsha phle ek card bnao fr map kro direct nhu isiliye ohle store se data leke hamne pass kra list m list m jaake ek card bnaya phle 
+    we have to build toggle functionality for gpt search 
+
+# hamesha yaad rkhna jb bhi jsx m if else lgao jese showGptsearch ? <Header /> : <mainContainer> < secondryContainer> will give u error isi  ko bchane k liye ham fregment ka use krte hai toh it will be basicialyy this =>showGptsearch ? <Header /> : <> <mainContainer> < secondryContainer> </> //Fragments
+
+we can also use UseRef t ochange language

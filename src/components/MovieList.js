@@ -2,7 +2,7 @@ import React from 'react'
 import MovieCards from './MovieCards'
 
 const MovieList = ({title , movies}) => {
-    console.log(movies)
+    
     if(movies===null){
         return (
             <div>Loading</div>
