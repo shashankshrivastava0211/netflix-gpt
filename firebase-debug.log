@@ -1,0 +1,41 @@
+[debug] [2024-05-28T11:48:37.869Z] ----------------------------------------------------------------------
+[debug] [2024-05-28T11:48:37.870Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-05-28T11:48:37.870Z] CLI Version:   13.10.1
+[debug] [2024-05-28T11:48:37.870Z] Platform:      darwin
+[debug] [2024-05-28T11:48:37.871Z] Node Version:  v20.12.1
+[debug] [2024-05-28T11:48:37.871Z] Time:          Tue May 28 2024 17:18:37 GMT+0530 (India Standard Time)
+[debug] [2024-05-28T11:48:37.871Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-28T11:48:37.906Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-28T11:48:37.906Z] > authorizing via signed-in user (shashank.shrivastava1102@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/shashank/Desktop/netflix-gpt
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-28T11:48:41.351Z] Using project from CLI flag: netflixgpt-3cc06
+[debug] [2024-05-28T11:48:41.352Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-3cc06 [none]
+[debug] [2024-05-28T11:48:41.448Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/netflixgpt-3cc06, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-3cc06 failed, reason: read ECONNRESET
+[debug] [2024-05-28T11:48:41.448Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-3cc06 (original: request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-3cc06 failed, reason: read ECONNRESET)
+[debug] [2024-05-28T11:48:41.716Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-3cc06
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project netflixgpt-3cc06. Please make sure the project exists and your account has permission to access it.

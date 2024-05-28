@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "netflixgpt-3cc06"
-  }
+    "default": "netflixgpt-3cc06",
+    "staging": "netflixgpt-3cc06"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
