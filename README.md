@@ -86,6 +86,10 @@ update profile
 bug fix
 unsubcribed to the onAuthchanged CALLBACK
 registered an tmdb api ,created an app an dget access tocken then take get data from tmdb niow play]ying apis 
+multiligual support 
+open Ai 
+generate key (working on open ai keys)
+
 
 
 =================================================><=====================================================
@@ -200,3 +204,27 @@ we do not have trailer from our current api so we need to get an trailer api als
 # hamesha yaad rkhna jb bhi jsx m if else lgao jese showGptsearch ? <Header /> : <mainContainer> < secondryContainer> will give u error isi  ko bchane k liye ham fregment ka use krte hai toh it will be basicialyy this =>showGptsearch ? <Header /> : <> <mainContainer> < secondryContainer> </> //Fragments
 
 we can also use UseRef t ochange language
+
+#paid key keep it secret
+now ehn i am typing something it should take it and make an api call such that it return me peice of whati have searched from from open ai 
+#platform.openAi 
+
+#npm open ai 
+
+messages: [{ role: 'user', content: 'Say this is a test' }], pass message like this suppose here in content i have written some horror movies and this is 3.5 turbo gpt 4 api are expensive npm
+
+useRef returns us a object in which current.value holds ur value now i will use this search text to make an api call in respect with gpt
+
+ created .env file for sorting some errors like web_sockets now created a query and pasted in content of gpt turbo 
+
+ 
+
+
+ # important concept here searchTMDB(movie) is a function which is a async function which is taking a movie and returning detail of that movie from tmdb so mapping on it will not return us 5 movies instead it will return us 5 promises as it will not wait for promise to settle and keep on mapping 
+ JAVAScripct wait for noone
+ suppose const data = gptMovies.map((movie)=>searchTMDb(movie))
+ [promise,promise,promise,promise]==>now how to resolve it ===>once all the promise got resolve than only we will get tmdb results  
+
+ for that we will use promise.all =>it takes a array of promise and resolve it like=>
+ const tmdbResults = await Promise.all(gptMovies)
+

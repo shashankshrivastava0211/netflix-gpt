@@ -25,3 +25,5 @@ export const api_options = {
     name :"french"
   }
 ]
+
+export const OPEN_AI_KEY="sk-proj-jHDbNQsSpv4MFmF2UNF4T3BlbkFJNf2SywwmwIT9GdCA9NAw"
