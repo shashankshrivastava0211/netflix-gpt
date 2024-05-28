@@ -15,12 +15,14 @@ const SecondryContainer = () => {
                 horror
 
             } */}
+            <div className='mt-0'>
             <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies}/>
             <MovieList title={"Top-Rated"} movies={movies?.addTopRatedMovies}/>
             <MovieList title={"up comming Movies"} movies={movies?.addUpComming}/>
             <MovieList title={"Popular"} movies={movies.addPopularMovies}/>
              <MovieList title={"Horror"} movies={movies.addTopRatedMovies}/>
             <MovieList title={"Drama"} movies={movies.nowPlayingMovies}/>
+            </div>
         </div>
     )
 }

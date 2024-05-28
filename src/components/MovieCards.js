@@ -4,7 +4,7 @@ import { IMG_CDN } from '../utils/constants';
 const MovieCards = ({ posterPath }) => {
     return (
         <div className='p-2 transform transition-transform duration-300 hover:scale-105'>
-            <div className='w-40'>
+            <div className='md:w-40 w-32'>
                 <img
                     alt='movie card'
                     src={IMG_CDN + posterPath}

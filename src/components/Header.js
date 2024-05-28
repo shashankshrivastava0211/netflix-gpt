@@ -51,13 +51,13 @@ const Header = () => {
       dispatch(toggleGptSearchView())
     }
     return (
-        <div className='absolute px-8 w-full py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
-            <img className='w-44'
+        <div className='absolute px-8 w-full py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between '>
+            <img className='w-44 mx-auto md:mx-0'
             src={logo}
             alt='logo'/>
-            <div className='flex p-2'>
+            <div className='flex p-2 justify-between'>
               <button className='py-2 px-4 m-2 bg-white text-black rounded-lg font-bold' onClick={handleGptSearch}>{showGptSearch?"Homepage" :"GPTSearch"}</button>
-                <img className="w-12 h-12 " alt='userIcon' src={userLogo}/>
+                <img className="w-12 h-12 hidden md:block" alt='userIcon' src={userLogo}/>
                 <div className='p-2'>
                 <button className='bg-white font-bold rounded-lg p-2'onClick={handleSignout}>Sign Out</button>
                 </div>
