@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 
 import { useDispatch } from 'react-redux';
+import Watch from './Watch';
 
 
 
@@ -18,7 +19,11 @@ const Body = () => {
     },{
         path :"/browse",
         element:<Browse />
-    }])
+    },{
+        path : "/watch/:id",
+        element :<Watch />
+    }
+])
 
   
 

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addTrailerVideo } from '../utils/MoviesSliceTwo'
 
 const VideoBackground = ({id}) => {
+    console.log("kya ye, id")
     const trailerVideo=useSelector(store=>store?.movies?.TrailerVideo)
     const dispatch=useDispatch()
     //fetch my trailer vedio 
@@ -13,6 +14,8 @@ const VideoBackground = ({id}) => {
         
         const data = await fetch('https://api.themoviedb.org/3/movie/823464/videos',api_options)
         const  json = await data.json()
+        console.log("test",json)
+    
         
 
         const filterData =json.results.filter((Video)=>Video.type==="Trailer")//this also returns
